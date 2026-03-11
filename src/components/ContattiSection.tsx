@@ -1,3 +1,4 @@
+import { PopupButton } from "react-calendly";
 import { Phone, Mail, MapPin, Calendar } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -223,14 +224,12 @@ const ContattiSection = () => {
             <p className="text-primary-foreground/60 text-sm md:text-base leading-relaxed mb-8 max-w-md mx-auto">
               È possibile prenotare direttamente una call conoscitiva di 30 minuti con lo Studio.
             </p>
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <PopupButton
+              url={CALENDLY_URL}
+              rootElement={document.getElementById("root")!}
+              text="Prenota una call"
               className="inline-block border border-gold text-gold hover:bg-accent hover:text-accent-foreground px-10 py-3 text-sm tracking-[0.15em] uppercase font-body font-medium rounded-sm transition-colors"
-            >
-              Prenota una call
-            </a>
+            />
           </div>
         </FadeIn>
       </div>
