@@ -15,7 +15,7 @@ const AppuntamentiSection = () => {
                         Prenota una consulenza
                     </h2>
                     <p className="text-primary-foreground/60 text-sm md:text-base mb-10 max-w-md mx-auto">
-                        Prenota direttamente una call conoscitiva di 30 minuti con lo Studio.
+                        Prenota direttamente una call conoscitiva di 30 minuti con lo Studio, al costo di 50€ / h.
                     </p>
                 </FadeIn>
 
