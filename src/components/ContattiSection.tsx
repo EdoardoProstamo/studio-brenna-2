@@ -1,4 +1,5 @@
 import { PopupButton } from "react-calendly";
+import { InlineWidget } from "react-calendly";
 import { Phone, Mail, MapPin, Calendar } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -9,8 +10,6 @@ import { Textarea } from "./ui/textarea";
 import { Checkbox } from "./ui/checkbox";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
-
-const CALENDLY_URL = "https://calendly.com/studio-legale-brenna";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Il campo Nome e Cognome è obbligatorio.").max(100),
@@ -213,23 +212,6 @@ const ContattiSection = () => {
                 </Button>
               </div>
             </form>
-          </div>
-        </FadeIn>
-
-        {/* Calendly booking */}
-        <FadeIn delay={0.2}>
-          <div className="max-w-2xl mx-auto mt-20 pt-16 border-t border-primary-foreground/10 text-center">
-            <Calendar className="text-gold mx-auto mb-4" size={24} strokeWidth={1.5} />
-            <h3 className="text-xl font-serif text-primary-foreground mb-3">Prenota una consulenza</h3>
-            <p className="text-primary-foreground/60 text-sm md:text-base leading-relaxed mb-8 max-w-md mx-auto">
-              È possibile prenotare direttamente una call conoscitiva di 30 minuti con lo Studio.
-            </p>
-            <PopupButton
-              url={CALENDLY_URL}
-              rootElement={document.getElementById("root")!}
-              text="Prenota una call"
-              className="inline-block border border-gold text-gold hover:bg-accent hover:text-accent-foreground px-10 py-3 text-sm tracking-[0.15em] uppercase font-body font-medium rounded-sm transition-colors"
-            />
           </div>
         </FadeIn>
       </div>

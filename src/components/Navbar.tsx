@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Il Team", href: "#team" },
   { label: "Metodo", href: "#metodo" },
   { label: "Contatti", href: "#contatti" },
+  { label: "Appuntamenti", href: "#appuntamenti" },
 ];
 
 const Navbar = () => {

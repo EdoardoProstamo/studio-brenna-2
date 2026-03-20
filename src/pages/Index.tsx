@@ -5,6 +5,7 @@ import CompetenzeSection from "@/components/CompetenzeSection";
 import TeamSection from "@/components/TeamSection";
 import MetodoSection from "@/components/MetodoSection";
 import ContattiSection from "@/components/ContattiSection";
+import AppuntamentiSection from "@/components/AppuntamentiSection";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -16,6 +17,7 @@ const Index = () => (
     <TeamSection />
     <MetodoSection />
     <ContattiSection />
+    <AppuntamentiSection />
     <Footer />
   </>
 );
